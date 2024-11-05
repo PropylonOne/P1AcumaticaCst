@@ -209,10 +209,6 @@ namespace PX.Objects.CR
             CRCaseExt rowExt = PXCache<CRCase>.GetExtension<CRCaseExt>(row);
             DateTime now = DateTime.Now;
 
-          /*  // Update the total time field based on logic you want to implement
-            int totalTimeMinutes = CalculateTotalTime(rowExt, now);
-            cache.SetValueExt<CRCaseExt.usrTotalTimeClock>(row, totalTimeMinutes);*/
-
             // Capture time between AS (Unassigned) and AA (Assigned)
             if (row.Resolution == "AS" && rowExt.UsrAssignedTimeB == null)
             {

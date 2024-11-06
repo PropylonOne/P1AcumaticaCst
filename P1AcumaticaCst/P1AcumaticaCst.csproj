@@ -58,6 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRCaseExt.cs" />
+    <Compile Include="CRCaseMaintExt.cs" />
     <Compile Include="Descriptor\Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeCardMaintExt.cs" />
